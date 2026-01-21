@@ -37,7 +37,7 @@ export default function Navbar() {
                     href="#"
                     className="text-sm font-medium text-white tracking-wide"
                 >
-                    Aman Kumar
+                    AK
                 </a>
 
                 {/* Navigation + CTA */}
