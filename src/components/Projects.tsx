@@ -11,13 +11,13 @@ type Project = {
 
 const projects: Project[] = [
     {
-        title: "IoT Telematics System",
+        title: "Bare-Metal Programming",
         role: "Firmware Developer",
         period: "2025",
         description:
-            "Production-grade telematics solution with PIC32CX bare-metal firmware, implementing secure cloud connectivity through Azure IoT Hub with certificate-based authentication and comprehensive driver development.",
+            "A practical, step-by-step guide to bare-metal firmware development, built from real industry experience and implemented on independent. Focuses on how firmware actually works under the hood — not just HAL usage.",
         impact:
-            "Full-stack IoT system with GPS/SMS, MQTT/HTTPS protocols, and enterprise security",
+            "Demonstrates full-stack IoT firmware development with PIC32CX, secure cloud connectivity, GPS/SMS, MQTT/HTTPS protocols, and enterprise-level security. Serves as a reusable reference for MCU bring-up, debugging, and register-level programming.",
         tech: ["PIC32CX", "Azure IoT Hub", "MQTT", "TLS/mTLS", "Bare-metal Firmware"]
     },
     {
