@@ -15,9 +15,9 @@ const projects: Project[] = [
         role: "Firmware Developer",
         period: "2025",
         description:
-            "A practical, step-by-step guide to bare-metal firmware development, built from real industry experience and implemented on independent. Focuses on how firmware actually works under the hood — not just HAL usage.",
+            "Step-by-step bare-metal firmware development on PIC32CX with real industry examples.",
         impact:
-            "Demonstrates full-stack IoT firmware development with PIC32CX, secure cloud connectivity, GPS/SMS, MQTT/HTTPS protocols, and enterprise-level security. Serves as a reusable reference for MCU bring-up, debugging, and register-level programming.",
+            "Showcases full-stack IoT firmware with secure cloud, GPS/SMS, and register-level programming.",
         tech: ["PIC32CX", "Azure IoT Hub", "MQTT", "TLS/mTLS", "Bare-metal Firmware"]
     },
     {
@@ -35,8 +35,8 @@ const projects: Project[] = [
         role: "Researcher",
         period: "Jan 2025 - Sep 2025",
         description:
-            "Developed a robust spectrum sensing method for cognitive radio networks using the Fast Slepian Transform (FST) and DPSS-based signal projection, enabling accurate detection under low SNR conditions.",
-        impact: "Achieved higher detection probability, lower false alarms, and improved energy efficiency compared to traditional methods, suitable for real-time, low-power applications.",
+            "Implemented robust spectrum sensing for cognitive radio using Fast Slepian Transform under low SNR.",
+        impact: "Improved detection accuracy, reduced false alarms, and enhanced energy efficiency for real-time use.",
         tech: ["Python", "Jupyter", "DSP", "Cognitive Radio Networks", "Spectrum Sensing", "Signal Processing"]
     },
     {
