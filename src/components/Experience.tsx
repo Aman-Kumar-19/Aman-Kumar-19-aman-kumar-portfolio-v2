@@ -13,11 +13,11 @@ const experiences: Experience[] = [
         company: "CNH Industrial R&D",
         role: "Hardware / Embedded Firmware Intern",
         period: "Jan 2025 - Present",
-        location: "Vellore, Tamil Nadu",
+        location: "Bangalore, Karnataka",
         achievements: [
-            "Developed IoT telematics system with PIC32CX bare-metal firmware, custom PCB bring-up, GPS/SMS communication, and secure cloud connectivity",
-            "Implemented MQTT/HTTPS with Azure IoT Hub, TLS/mTLS, SAS tokens, and certificate-based authentication",
-            "Developed drivers (GPIO, Timers, UART, SPI, ADC, PWM, I2C), debugged firmware, AT command sequences, and network issues"
+            "Built IoT telematics system with PIC32CX bare-metal firmware, custom PCB, GPS/SMS, and secure cloud connectivity.",
+            "Implemented MQTT/HTTPS, Azure IoT Hub integration, and certificate-based authentication with TLS/mTLS.",
+            "Developed and debugged drivers (GPIO, Timers, UART, SPI, ADC, PWM, I2C) and network/AT command sequences."
         ]
     },
     {
