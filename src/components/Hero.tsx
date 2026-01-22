@@ -33,16 +33,16 @@ export default function Hero() {
                             Aman <span className="text-neutral-600 font-light italic">Kumar</span>
                         </h1>
                         <p className="mt-6 md:mt-8 text-lg md:text-xl lg:text-2xl text-neutral-400 max-w-xl leading-relaxed">
-                            Engineering <span className="text-white font-semibold">intelligent IoT systems</span>. Specializing in embedded architectures and real-time systems.
+                            Engineering <span className="text-white font-semibold">embedded & IoT systems</span>. Open to full-time opportunities in embedded and real-time system development.
                         </p>
                     </div>
 
                     <div className="mt-10 flex flex-col sm:flex-row gap-4">
                         <a href="#projects" className="w-full sm:w-auto text-center px-10 py-4 bg-white text-black rounded-2xl font-bold hover:bg-blue-600 hover:text-white transition-all">
-                            View Roadmap
+                            View Projects
                         </a>
                         <div className="flex items-center justify-center gap-4 px-6 py-4 bg-neutral-800/50 rounded-2xl border border-neutral-700/50">
-                            <span className="text-xs font-mono text-neutral-400 uppercase">Python // RTOS // IoT</span>
+                            <span className="text-xs font-mono text-neutral-400 uppercase">Embedded C // RTOS // IoT // Python</span>
                         </div>
                     </div>
                 </motion.div>
@@ -69,7 +69,7 @@ export default function Hero() {
                 <div className="col-span-1 md:col-span-2 lg:col-span-8 bg-neutral-900/40 border border-neutral-800 rounded-[2.5rem] p-8 flex items-center justify-between">
                     <div>
                         <p className="text-neutral-500 text-xs font-mono uppercase mb-2">Availability</p>
-                        <h3 className="text-lg md:text-xl text-white font-semibold">Open for Research Roles</h3>
+                        <h3 className="text-lg md:text-xl text-white font-semibold">Open to Job Opportunities – Embedded & IoT Systems</h3>
                     </div>
                     <div className="h-10 w-10 rounded-full bg-blue-500/20 flex items-center justify-center border border-blue-500/30">
                         <div className="h-2 w-2 rounded-full bg-blue-500 animate-ping" />
