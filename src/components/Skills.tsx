@@ -1,32 +1,67 @@
+tsx
 import SectionReveal from "./SectionReveal";
 
 const skills: Record<string, string[]> = {
-    "Embedded & Firmware": [
+    "Embedded Systems & Firmware": [
         "C",
         "Embedded C",
-        "PIC32CX",
+        "Bare-metal Firmware",
+        "PIC32CX SG61",
         "STM32",
         "ESP32",
-        "Bare-metal firmware",
-        "Peripheral drivers",
-        "PCB bring-up"
+        "Peripheral Drivers",
+        "Firmware Architecture",
+        "PCB Bring-up"
     ],
-    "IoT & Cloud": [
-        "Azure IoT Hub",
+
+    "MCU Peripherals & Protocols": [
+        "GPIO",
+        "UART",
+        "SPI",
+        "I²C",
+        "ADC",
+        "PWM",
+        "Timers",
+        "CAN",
+        "J1939",
+        "Interrupts"
+    ],
+
+    "Automotive & IoT": [
+        "CAN Bus",
+        "Automotive Telematics",
+        "GNSS / GPS",
+        "Cellular Communication",
+        "Quectel EC200U",
         "MQTT",
         "HTTPS",
         "TLS / SSL",
-        "Cellular communication",
-        "Device telemetry"
+        "Azure IoT Hub",
+        "Device Telemetry"
     ],
-    "Tools & Debugging": [
+
+    "Hardware & PCB": [
+        "KiCad",
+        "Schematic Design",
+        "PCB Design",
+        "PCB Layout",
+        "Hardware Bring-up",
+        "Logic Analyzer",
+        "Oscilloscope",
+        "Hardware Debugging"
+    ],
+
+    "Software & Engineering Tools": [
         "Python",
+        "Flask",
+        "XML Processing",
+        "Pandas",
         "Jupyter",
+        "Git",
+        "GitHub",
         "VS Code",
         "MPLAB X",
-        "NetSim",
-        "Logic analyzers",
-        "Debugging tools"
+        "NetSim"
     ]
 };
 
@@ -55,9 +90,9 @@ export default function Skills() {
                                                 animation: `fadeInUp 0.5s ease-out ${i * 0.05}s both`
                                             }}
                                         >
-                      <span className="text-slate-300 group-hover:text-slate-100 transition-colors">
-                        {skill}
-                      </span>
+                                            <span className="text-slate-300 group-hover:text-slate-100 transition-colors">
+                                                {skill}
+                                            </span>
                                         </div>
                                     ))}
                                 </div>
@@ -69,3 +104,4 @@ export default function Skills() {
         </section>
     );
 }
+
