@@ -1,4 +1,4 @@
-tsx
+
 import SectionReveal from "./SectionReveal";
 
 const skills: Record<string, string[]> = {
