@@ -11,62 +11,196 @@ type Project = {
 
 const projects: Project[] = [
     {
-        title: "Bare-Metal Programming",
-        role: "Firmware Developer",
-        period: "2025",
+        title: "Embedded IoT Telematics System",
+        role: "Embedded Firmware Developer · CNH Industrial",
+        period: "2025–2026",
         description:
-            "Step-by-step bare-metal firmware development on PIC32CX with real industry examples.",
+            "Developed bare-metal firmware for an automotive IoT telematics system using the PIC32CX SG61 and Quectel EC200U cellular modem. Integrated GNSS, cellular communication, CAN, and cloud connectivity for vehicle telemetry.",
         impact:
-            "Showcases full-stack IoT firmware with secure cloud, GPS/SMS, and register-level programming.",
-        tech: ["PIC32CX", "Azure IoT Hub", "MQTT", "TLS/mTLS", "Bare-metal Firmware"]
+            "Implemented MCU peripheral drivers, modem communication, GPS telemetry, MQTT/HTTPS communication, and secure cloud connectivity with Azure IoT Hub.",
+        tech: [
+            "PIC32CX SG61",
+            "Embedded C",
+            "Bare-metal",
+            "EC200U",
+            "GNSS",
+            "CAN / J1939",
+            "MQTT",
+            "HTTPS",
+            "TLS / mTLS",
+            "Azure IoT Hub"
+        ]
     },
     {
-        title: "Smart Lighting IoT System",
-        role: "IoT Engineer",
-        period: "2024",
+        title: "PIC32CX SG61 Bare-Metal Firmware",
+        role: "Embedded Firmware Developer",
+        period: "2026",
         description:
-            "Architected an intelligent lighting infrastructure using ESP32 microcontrollers and real-time sensor networks to optimize energy consumption across commercial deployments.",
+            "Built a register-level firmware foundation for the PIC32CX SG61 microcontroller, focusing on peripheral configuration, clocking, interrupts, and hardware bring-up without relying on high-level frameworks.",
         impact:
-            "100% functionality validation, seamless hardware–software integration",
-        tech: ["ESP32", "Arduino", "STM32", "IoT Protocols", "Real-time Systems"]
+            "Developed and validated reusable drivers for GPIO, UART, SPI, I²C, ADC, PWM, timers, and CAN while debugging peripheral and clock configuration issues on real hardware.",
+        tech: [
+            "PIC32CX SG61",
+            "Embedded C",
+            "Bare-metal",
+            "GPIO",
+            "UART",
+            "SPI",
+            "I²C",
+            "ADC",
+            "PWM",
+            "CAN"
+        ]
     },
     {
-        title: "Spectrum Sensing Using Fast Slepian Transform",
-        role: "Researcher",
-        period: "Jan 2025 - Sep 2025",
+        title: "CAN Bus Simulator & Analyzer",
+        role: "Python Developer",
+        period: "2026",
         description:
-            "Implemented robust spectrum sensing for cognitive radio using Fast Slepian Transform under low SNR.",
-        impact: "Improved detection accuracy, reduced false alarms, and enhanced energy efficiency for real-time use.",
-        tech: ["Python", "Jupyter", "DSP", "Cognitive Radio Networks", "Spectrum Sensing", "Signal Processing"]
+            "Developed a modular Python-based CAN simulation and analysis environment with virtual ECUs, CAN message generation, signal decoding, DBC-based encoding, and captured bus analysis.",
+        impact:
+            "Created a software-only environment for testing ECU interactions, CAN messages, signals, and vehicle behavior without requiring physical CAN hardware.",
+        tech: [
+            "Python",
+            "CAN",
+            "DBC",
+            "ECU Simulation",
+            "Signal Decoding",
+            "Vehicle Modeling",
+            "Data Analysis"
+        ]
+    },
+    {
+        title: "AeroCore — Custom STM32 Flight Controller",
+        role: "Embedded & Hardware Engineer",
+        period: "2026",
+        description:
+            "Designed a custom STM32-based flight controller with a structured hardware architecture covering the MCU, power management, sensors, communication interfaces, debugging, and PCB design.",
+        impact:
+            "Developed the complete engineering workflow from component selection and schematic architecture to PCB layout and embedded-system planning.",
+        tech: [
+            "STM32",
+            "Embedded C",
+            "KiCad",
+            "PCB Design",
+            "Schematic Design",
+            "IMU",
+            "SPI",
+            "I²C",
+            "UART",
+            "Flight Control"
+        ]
+    },
+    {
+        title: "EC200U Board Bring-up",
+        role: "Embedded & Hardware Engineer",
+        period: "2026",
+        description:
+            "Performed hardware bring-up and validation of the Quectel EC200U cellular IoT module, including power, UART communication, GNSS, SIM connectivity, network registration, and AT-command based modem control.",
+        impact:
+            "Established reliable communication between the host MCU and EC200U, validated cellular and GNSS functionality, and debugged modem initialization, AT-command sequencing, and communication issues.",
+        tech: [
+            "Quectel EC200U",
+            "4G LTE",
+            "Hardware Bring-up",
+            "UART",
+            "GNSS / GPS",
+            "AT Commands",
+            "SIM",
+            "Cellular Communication",
+            "Embedded C",
+            "Oscilloscope / Logic Analyzer"
+        ]
+    },
+    {
+        title: "Smart Battery Management System Simulator",
+        role: "Embedded Systems & Python Developer",
+        period: "2026",
+        description:
+            "Designed a software-defined BMS architecture with a Python simulation layer and dashboard for monitoring battery voltage, current, temperature, state of charge, and system conditions.",
+        impact:
+            "Created a hardware-independent environment for experimenting with BMS logic, battery behavior, monitoring, and fault conditions before physical implementation.",
+        tech: [
+            "Python",
+            "Battery Management",
+            "BMS",
+            "Simulation",
+            "State of Charge",
+            "Telemetry",
+            "Dashboard"
+        ]
+    },
+    {
+        title: "Siemens / Capital Wiring Harness Diff Tool",
+        role: "Python Developer",
+        period: "2026",
+        description:
+            "Built a Flask-based web application and CLI tool to parse and compare Siemens/Capital wiring harness XML exports across incompatible schema versions.",
+        impact:
+            "Implemented schema-agnostic extraction and classified connectors, wires, splices, and components as Added, Removed, Modified, or Unchanged, with Excel report generation.",
+        tech: [
+            "Python",
+            "Flask",
+            "XML",
+            "Pandas",
+            "CLI",
+            "Excel",
+            "Data Processing",
+            "Schema Mapping"
+        ]
     },
     {
         title: "RC Aircraft Telemetry System",
         role: "Technical Lead",
         period: "2023–2024",
         description:
-            "Developed high-precision thrust measurement infrastructure with custom load cells and real-time analytics.",
+            "Developed a real-time thrust measurement and telemetry system using custom load-cell instrumentation, HX711 ADC hardware, Arduino, and Python-based data processing.",
         impact:
-            "Performance optimization through real-time telemetry",
-        tech: ["Arduino", "Python", "HX711 ADC", "CSV Processing"]
+            "Enabled real-time measurement, logging, and analysis of aircraft thrust data for performance evaluation and optimization.",
+        tech: [
+            "Arduino",
+            "C/C++",
+            "HX711",
+            "Load Cell",
+            "Python",
+            "Telemetry",
+            "CSV Processing"
+        ]
+    },
+    {
+        title: "Spectrum Sensing Using Fast Slepian Transform",
+        role: "Researcher",
+        period: "Jan 2025–Sep 2025",
+        description:
+            "Implemented spectrum-sensing techniques for cognitive radio networks using the Fast Slepian Transform, with a focus on reliable detection under low-SNR conditions.",
+        impact:
+            "Explored improved spectrum detection performance and reduced false-alarm behavior for energy-efficient cognitive radio applications.",
+        tech: [
+            "Python",
+            "Jupyter",
+            "DSP",
+            "Signal Processing",
+            "Cognitive Radio",
+            "Spectrum Sensing"
+        ]
     },
     {
         title: "Hybrid Cryptography for 5G Networks",
         role: "Security Researcher",
         period: "2024",
         description:
-            "Published in Nature: Proposed a hybrid AES–DES–RSA architecture for high-speed 5G network security, improving encryption performance and robustness.",
+            "Developed and evaluated a hybrid cryptographic architecture combining AES, DES, and RSA techniques for secure communication in 5G network environments.",
         impact:
-            "Improved efficiency over traditional encryption methods",
-        tech: ["Python", "Jupyter", "Cryptography", "5G Security", "Algorithm Design"]
-    },
-    {
-        title: "Line-Following Autonomous Robot",
-        role: "Robotics Engineer",
-        period: "2023",
-        description:
-            "Built an autonomous robot using QRT sensors and PID control for precise navigation.",
-        impact: "25% reduction in navigation errors",
-        tech: ["Arduino", "C/C++", "PID Control"]
+            "Investigated the trade-offs between encryption security, computational overhead, and communication performance.",
+        tech: [
+            "Python",
+            "Jupyter",
+            "Cryptography",
+            "AES",
+            "RSA",
+            "5G Security",
+            "Algorithm Design"
+        ]
     }
 ];
 
@@ -99,7 +233,9 @@ export default function Projects() {
                                 </p>
 
                                 <p className="text-slate-300 text-sm mb-5">
-                                    <span className="text-slate-500">Impact:</span>{" "}
+                                    <span className="text-slate-500">
+                                        Impact:
+                                    </span>{" "}
                                     {project.impact}
                                 </p>
 
@@ -110,8 +246,8 @@ export default function Projects() {
                                             className="text-xs px-3 py-1 border border-slate-700
                                  text-slate-300 rounded-full"
                                         >
-                      {tech}
-                    </span>
+                                            {tech}
+                                        </span>
                                     ))}
                                 </div>
                             </div>
@@ -122,3 +258,4 @@ export default function Projects() {
         </section>
     );
 }
+
