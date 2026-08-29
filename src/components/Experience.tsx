@@ -12,45 +12,48 @@ const experiences: Experience[] = [
     {
         company: "CNH Industrial R&D",
         role: "Hardware / Embedded Firmware Intern",
-        period: "Jan 2025 - Present",
+        period: "Oct 2025 – Present",
         location: "Bangalore, Karnataka",
         achievements: [
-            "Built IoT telematics system with PIC32CX bare-metal firmware, custom PCB, GPS/SMS, and secure cloud connectivity.",
-            "Implemented MQTT/HTTPS, Azure IoT Hub integration, and certificate-based authentication with TLS/mTLS.",
-            "Developed and debugged drivers (GPIO, Timers, UART, SPI, ADC, PWM, I2C) and network/AT command sequences."
+            "Developed an automotive IoT telematics system using PIC32CX SG61 bare-metal firmware, custom hardware, and the Quectel EC200U cellular module.",
+            "Designed and implemented MCU peripheral drivers for GPIO, timers, UART, SPI, I²C, ADC, PWM, and CAN, including hardware bring-up and debugging on real hardware.",
+            "Integrated GNSS, cellular communication, GPS telemetry, and CAN/J1939 vehicle data acquisition for connected-vehicle applications.",
+            "Implemented MQTT and HTTPS communication with Azure IoT Hub and worked with TLS/mTLS, certificates, SAS authentication, and secure device-to-cloud communication.",
+            "Performed EC200U board bring-up and debugged UART communication, AT-command sequencing, network registration, GNSS, SIM, and modem initialization issues.",
+            "Developed and validated firmware through hardware testing, logic-analyzer/oscilloscope debugging, and systematic investigation of peripheral and communication failures."
         ]
     },
     {
         company: "Seculinx",
         role: "IoT Intern",
-        period: "Sept 2024 - Jan 2025",
+        period: "Sep 2024 – Jan 2025",
         location: "Vellore, Tamil Nadu",
         achievements: [
-            "Designed and implemented an IoT-based smart lighting system using ESP32 to optimize energy consumption and enhance user control",
-            "Collaborated across teams to ensure seamless integration of hardware and software, achieving 100% functionality testing",
-            "Created detailed technical documentation outlining design, implementation, and troubleshooting methods"
+            "Designed and implemented an IoT-based smart lighting system using ESP32 for intelligent control and energy optimization.",
+            "Integrated embedded hardware and software components and performed functional validation across the complete system.",
+            "Developed technical documentation covering system architecture, implementation, testing, and troubleshooting procedures."
         ]
     },
     {
         company: "Maven Silicon Softech Pvt Ltd",
         role: "Embedded Engineer Intern",
-        period: "Jun 2024 - July 2024",
+        period: "Jun 2024 – Jul 2024",
         location: "Vellore, Tamil Nadu",
         achievements: [
-            "Collaborated with senior engineers to design and implement digital system architectures using Embedded C",
-            "Engineered a wearable obstacle detection device for visually impaired individuals, achieving 95% reliability",
-            "Documented comprehensive project processes shared with cross-functional teams"
+            "Worked with senior engineers on digital system architecture and embedded application development using Embedded C.",
+            "Developed a wearable obstacle-detection device for visually impaired users using embedded sensors and real-time processing.",
+            "Documented implementation, testing, and troubleshooting procedures for cross-functional engineering use."
         ]
     },
     {
-        company: "ASME - Team Veloce",
+        company: "ASME – Team Veloce",
         role: "Technical Core Member",
-        period: "June 2023 - July 2024",
+        period: "Jun 2023 – Jul 2024",
         location: "Vellore, Tamil Nadu",
         achievements: [
-            "Developed high-precision thrust measurement system using Arduino and sensors (HX711, ADC, load cell) for RC aircraft",
-            "Integrated custom-built load cell enhancing accuracy for real-time data analysis",
-            "Collected extensive datasets in CSV format, employing Python for data cleaning, visualization, and analytics"
+            "Developed a real-time thrust measurement and telemetry system for RC aircraft using Arduino, load cells, and HX711 ADC instrumentation.",
+            "Designed and integrated custom load-cell measurement hardware and performed sensor calibration for accurate thrust measurement.",
+            "Collected and processed experimental datasets using Python, including CSV data processing, visualization, and performance analysis."
         ]
     }
 ];
@@ -58,7 +61,7 @@ const experiences: Experience[] = [
 export default function Experience() {
     return (
         <section id="experience" className="py-40 px-6">
-        <SectionReveal>
+            <SectionReveal>
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-4xl font-medium mb-12 text-white">
                         Experience
